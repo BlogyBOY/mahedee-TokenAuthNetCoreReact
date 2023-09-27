@@ -1,11 +1,77 @@
+#==================================
+
+
+
+#==================================
+
+URL
 https://create-react-app.dev/docs/getting-started
+
+#==================================
 
 npm init react-app my-app
 
-
+#==================================
 npm init react-app eComm-app
 cd .\ecom-app\
 npm start
+
+#==================================
+#==================================
+
+
+Issue 1
+#==================================
+npm install react-router-dom
+
+URL 
+https://bobbyhadz.com/blog/react-module-not-found-cant-resolve-react-router-dom#:~:text=To%20solve%20the%20error%20%22Module,and%20restart%20your%20development%20server.&text=Copied!
+#==================================
+
+after run to fix 
+
+npm audit fix --force
+
+#==================================
+
+react-toastify
+
+#==================================
+
+npm install --save react-toastify
+
+#==================================
+
+
+#==================================
+#==================================
+
+
+reactstrap
+#==================================
+npm i bootstrap
+
+npm i reactstrap react react-dom
+
+
+
+Import Bootstrap CSS in the src/index.js file:
+----------------------------------
+
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+
+#==================================
+react-router-dom
+#==================================
+
+npm i react-router-dom
+
+
+****
+#==================================
+
 
 
 
