@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import React, { Component } from 'react';
-import { Route } from 'react-router';
+// import { Route } from 'react-router';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Layout } from './components/Layout';
 import { Home } from './components/Home';
@@ -33,8 +34,9 @@ export default class App extends Component {
       // if (SessionManager.getToken()) {
       SessionManager.getToken() ? (
         <Layout>
-          <Route exact path='/home' component={Home} />
-          {/*
+          <h1>this is App.JS</h1>
+          {/*<Route exact path='/home' component={Home} />
+        
                 <Route exact path='/home' component={Home} />
 
                 <Route path='/logout' component={Logout} />
@@ -69,14 +71,22 @@ export default class App extends Component {
 
       ) : (
 
-          <>
-            <Layout>
-              <Route path={'/', "/login"} component={Login} />
-                  <Route path='/admin/user/register' component={CreateUser}></Route>
-            </Layout>
-          </>
+        <>
+          <Layout>
+            <h1>ELSE this is App.JS</h1>
+            {/* <Route> */}
+            {/* <Route path={'/', "/login"} component={Login} /> */}
 
-        )
+            {/* <Route path='/admin/user/register' component={CreateUser}></Route> */}
+            <Routes>
+              <Routes exact path='/home' component={Home} />
+            </Routes>
+            {/* </Route> */}
+          </Layout>
+        </>
+
+      )
     );
   }
+
 }

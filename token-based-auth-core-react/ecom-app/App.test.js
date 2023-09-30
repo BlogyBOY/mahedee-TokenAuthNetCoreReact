@@ -6,9 +6,9 @@ import App from './App';
 it('renders without crashing', async () => {
   const div = document.createElement('div');
   ReactDOM.render(
-    <Routes>
-      <Route path="/" element={<App />} >
-      </Route>
+    <Routes path="/" element={<App />} >
+      {/* <Route path="/" element={<App />} > */}
+      {/* </Route> */}
     </Routes>, div);
   await new Promise(resolve => setTimeout(resolve, 1000));
 });
